@@ -1,0 +1,44 @@
+.link {
+	padding: 14px 39px;
+	background-color: #fcb72b;
+	margin-left: auto;
+	display: inline-block;
+
+	@include fontDesc;
+	font-family: "Space Mono";
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+
+	&:hover {
+		padding: 11px 36px;
+		background-color: transparent;
+		color: #fcb72b;
+		border: 3px solid #fcb72b;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.link {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.header {
+		position: relative;
+
+		.link {
+			display: none;
+		}
+
+		.link--active {
+			display: block;
+			left: 32px;
+			top: calc(100vh - 100%);
+			z-index: 1;
+
+			position: absolute;
+		}
+	}
+}

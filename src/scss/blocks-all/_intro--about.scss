@@ -1,0 +1,87 @@
+.intro--about {
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min--moz-device-pixel-ratio: 2),
+		only screen and (-o-min-device-pixel-ratio: 2/1),
+		only screen and (min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+		background-image: url(../img/intro--about-bg@2x.jpg);
+	}
+
+	padding: 72px 0;
+	margin-bottom: 120px;
+	background-image: url(../img/intro--about-bg.jpg);
+	background-size: cover;
+
+	position: relative;
+
+	&::after {
+		content: "";
+		top: 50%;
+		transform: translateY(-50%);
+		right: -15px;
+		width: 234px;
+		height: 63px;
+		display: block;
+		background: url("../img/intro--about-ellipse.png") no-repeat center center;
+		background-size: contain;
+
+		position: absolute;
+	}
+
+	.intro__container {
+		width: 162px;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.intro--about {
+		@media only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (min--moz-device-pixel-ratio: 2),
+			only screen and (-o-min-device-pixel-ratio: 2/1),
+			only screen and (min-device-pixel-ratio: 2),
+			only screen and (min-resolution: 192dpi),
+			only screen and (min-resolution: 2dppx) {
+			background: url("../img/intro--about-tablet-bg@2x.jpg") no-repeat center center;
+			background-size: cover;
+		}
+
+		padding: 72px 97px;
+		margin-bottom: 144px;
+		background: url("../img/intro--about-tablet-bg.jpg") no-repeat center center;
+		background-size: cover;
+
+		position: relative;
+
+		.intro__container {
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.intro--about {
+		@media only screen and (-webkit-min-device-pixel-ratio: 2),
+			only screen and (min--moz-device-pixel-ratio: 2),
+			only screen and (-o-min-device-pixel-ratio: 2/1),
+			only screen and (min-device-pixel-ratio: 2),
+			only screen and (min-resolution: 192dpi),
+			only screen and (min-resolution: 2dppx) {
+			background: url("../img/intro--about-mobile-bg@2x.jpg") no-repeat center center;
+			background-size: cover;
+		}
+
+		padding: 60px 0;
+		margin-bottom: 72px;
+
+		background: url("../img/intro--about-mobile-bg.jpg") no-repeat center center;
+		background-size: cover;
+
+		&::after {
+			display: none;
+		}
+		.intro__container {
+			display: inline;
+		}
+	}
+}

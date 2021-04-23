@@ -1,0 +1,162 @@
+.faqs {
+	margin: 120px auto;
+}
+.faqs__title {
+	margin-bottom: 64px;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: -2.14286px;
+
+	color: #495567;
+}
+.faqs__block {
+	display: flex;
+	margin-bottom: 64px;
+}
+.faqs__block-title {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: -1.78571px;
+	color: #495567;
+}
+.faqs__block-content {
+	margin-left: auto;
+}
+.faqs__block-select {
+	margin-bottom: 16px;
+}
+.faqs__button {
+	background: #f2f5f9;
+	border: none;
+	padding: 32px 40px;
+	outline: none;
+
+	text-align: left;
+	width: 730px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: -1.07143px;
+	color: #495567;
+
+	position: relative;
+
+	&::after {
+		content: "";
+		right: 40px;
+		top: 50%;
+		width: 16px;
+		height: 8px;
+		display: block;
+		background: url("../img/icon-faqs.svg") no-repeat center center;
+		transform: translateY(-50%) rotate(180deg);
+		background-size: contain;
+
+		position: absolute;
+	}
+
+	&:hover {
+		background: #fff4df;
+		cursor: pointer;
+	}
+}
+
+.about__inner-info {
+	display: none;
+	width: 730px;
+	padding: 0 40px 32px;
+	background: #f2f5f9;
+	@include fontDesc;
+	color: #495567;
+}
+
+.faqs__button--active {
+	padding-bottom: 10px;
+
+	&:hover {
+		background: #f2f5f9;
+	}
+
+	&::after {
+		top: calc(50% + 8px);
+		transform: rotate(0);
+	}
+
+	& ~ .about__inner-info {
+		display: block;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.faqs {
+		margin: 120px 0;
+	}
+	.faqs__block {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.faqs__block-title {
+		margin-bottom: 32px;
+	}
+	.faqs__block-content {
+		margin-left: 0;
+		text-align: left;
+	}
+	.faqs__block-select {
+		margin-bottom: 24px;
+	}
+	.faqs__button {
+		width: 100%;
+	}
+
+	.about__inner-info {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.faqs {
+		margin: 145px 0 120px;
+	}
+	.faqs__title {
+		margin-bottom: 48px;
+		font-size: 32px;
+		line-height: 32px;
+		letter-spacing: -1.42857px;
+	}
+	.faqs__block {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 48px;
+	}
+	.faqs__block-title {
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: -1.07143px;
+	}
+	.faqs__block-content {
+		margin-left: 0;
+	}
+	.faqs__block-select {
+		margin-bottom: 16px;
+	}
+	.faqs__button {
+		padding: 32px;
+		padding-right: 28px;
+
+		text-align: left;
+		width: 100%;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: -0.803571px;
+	}
+
+	.about__inner-info {
+		width: 100%;
+		padding: 0 28px 32px;
+	}
+}

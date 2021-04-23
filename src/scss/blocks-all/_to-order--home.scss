@@ -1,0 +1,82 @@
+@media screen and (max-width: $tablet) {
+	.to-order__list--home {
+		position: relative;
+		// flex-direction: column;
+		display: inline-block;
+		left: 50%;
+		transform: translateX(-50%);
+
+		&::before {
+			left: 41.5px;
+			top: -122px;
+			width: 15px;
+			height: calc(80% + 122px);
+
+			position: absolute;
+		}
+	}
+	.to-order__iteam--home {
+		width: 573px;
+		margin-bottom: 40px;
+		padding-top: 0;
+		padding-left: 136px;
+
+		position: relative;
+
+		&:last-child {
+			margin: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.to-order__list--home {
+		position: relative;
+		display: inline-block;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 50%;
+		transform: translateX(-50%);
+
+		&::before {
+			display: none;
+		}
+	}
+	.to-order__iteam--home {
+		margin-bottom: 48px;
+		width: 311px;
+		margin-right: 0;
+		padding-top: 80px;
+		padding-left: 0;
+		text-align: center;
+
+		position: relative;
+
+		&::before {
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+			width: 56px;
+			height: 56px;
+
+			position: absolute;
+		}
+
+		&::after {
+			left: 50%;
+			top: 28px;
+			transform: translate(-50%, -50%);
+			width: 22px;
+			height: 28px;
+
+			position: absolute;
+		}
+	}
+	.to-order__title--home {
+		margin-bottom: 24px;
+		font-size: 20px;
+		letter-spacing: -0.892857px;
+	}
+}

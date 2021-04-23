@@ -1,0 +1,109 @@
+.registration {
+	padding: 0 30px;
+	background: url("../img/registration-bg.png") no-repeat right bottom, #495567;
+	background-size: 1220px, 347px;
+}
+.registration__container {
+	padding: 102px 0;
+	display: flex;
+	align-items: center;
+}
+.registration__title {
+	width: 415px;
+
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 48px;
+	letter-spacing: -2.14286px;
+	color: #ffffff;
+}
+.registration__store {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+
+.play-market {
+	margin-left: 18px;
+}
+
+.registration__icon {
+	fill: #495567;
+	&:hover {
+		fill: #996600;
+	}
+}
+
+.registration__icon--play-market {
+	width: 182px;
+	height: 56px;
+}
+
+.registration__icon--app-store {
+	width: 159px;
+	height: 56px;
+}
+
+@media screen and (max-width: $tablet) {
+	.registration__container {
+		padding: 62px 0;
+		flex-direction: column;
+		text-align: center;
+	}
+	.registration__title {
+		width: 457px;
+		margin-bottom: 40px;
+	}
+	.registration__store {
+		display: flex;
+		margin-left: 0;
+
+		.play-market {
+			margin-left: 13px;
+		}
+	}
+
+	// .registration__icon--play-market {
+	// 	width: 114px;
+	// 	height: 40px;
+	// }
+
+	// .registration__icon--app-store {
+	// 	width: 130px;
+	// 	height: 40px;
+	// }
+}
+
+@media screen and (max-width: $mobile) {
+	.registration {
+		background: url("../img/registration-bg.png") no-repeat right bottom, #495567;
+		background-size: 1220px, 347px;
+	}
+	.registration__container {
+		padding: 88px 0;
+		flex-direction: column;
+	}
+	.registration__title {
+		width: 311px;
+		font-size: 32px;
+		line-height: 32px;
+		letter-spacing: -1.42857px;
+	}
+	.registration__store {
+		margin-left: 0;
+	}
+
+	.app-store__icon {
+		width: 114px;
+		height: 40px;
+	}
+
+	.play-market {
+		margin-left: 13px;
+
+		&__icon {
+			width: 130px;
+			height: 40px;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.hat {
+	padding: 22px 165px;
+}
+.hat__container {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: $tablet) {
+	.hat {
+		padding: 22px 10px;
+	}
+
+	.hat__container {
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.hat--footer {
+		padding: 64px 0 88px;
+	}
+}

@@ -1,0 +1,17 @@
+.hat--footer {
+	overflow-x: hidden;
+	max-width: 1920px;
+	margin: 0 auto;
+	background: #333a44;
+}
+
+.header__logo-icon--footer {
+	fill: #fff;
+}
+
+@media screen and (max-width: $mobile) {
+	.hat__container--footer {
+		flex-direction: column;
+		align-items: center;
+	}
+}

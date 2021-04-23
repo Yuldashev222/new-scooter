@@ -1,0 +1,25 @@
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 4;
+	background-color: #ecebebed;
+	box-shadow: 0 10px 70px rgb(65, 63, 63);
+}
+
+.header__logo-icon {
+	fill: #495567;
+
+	&:hover {
+		fill: #fcb72b;
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.header {
+		padding-left: 20px;
+	}
+	.header__logo {
+		margin: 0 auto;
+	}
+}
