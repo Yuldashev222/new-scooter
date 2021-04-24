@@ -1,0 +1,42 @@
+{
+	"reveals media queries ": {
+		"prefix": "media",
+		"body": ["@media screen and (max-width: $1) {", "", "}"],
+		"description": "reveals media queries "
+	},
+
+	"reveals container queries ": {
+		"prefix": "container",
+		"body": [
+			".container {",
+			"max-width: $1;",
+			"padding: 0 15px;",
+			"margin: 0 auto;",
+			"}"
+		],
+		"description": "reveals container queries "
+	},
+
+	"reveals visual queries ": {
+		"prefix": "visual",
+		"body": [
+			".visually-hidden {",
+			"	clip: rect(0 0 0 0);",
+			"	clip-path: inset(50%);",
+			"	height: 1px;",
+			"	overflow: hidden;",
+			"	position: absolute;",
+			"	white-space: nowrap;",
+			"	width: 1px;",
+			"}",
+			""
+		],
+		"description": "reveals visual queries "
+	},
+
+	"reveals box queries ": {
+		"prefix": "box",
+		"body": ["*,", "*::before,", "*::after {", "	box-sizing: border-box;", "}"],
+		"description": "reveals box queries "
+	}
+}
